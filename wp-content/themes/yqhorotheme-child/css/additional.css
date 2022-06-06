@@ -1,0 +1,27 @@
+.bullets li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.listBlock.special {
+    margin: 60px 0 40px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.listBlock {
+    background-color: #9c258f;
+    padding: 40px 0;
+    margin: 40px 0;
+}
+
+form input {
+    padding: 5px 10px;
+    border: 1px solid #494949;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 100%;
+    height: 30px;
+    color: #222222;
+}

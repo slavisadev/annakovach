@@ -1,0 +1,690 @@
+/*
+
+Theme Name: AnnaKovach Child
+Theme URI: http://www.cerseilabs.com
+Author: Cersei Labs Team
+Author URI: http://cerseilabs.com/
+Template:     annakovach
+Description:
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  annaKovach-child
+*/
+
+
+
+/*-------*****--------------****-------------
+                Custom Css
+-------*****--------------****-------------*/
+
+@font-face {
+    font-family: 'Symbols';
+    font-style: normal;
+    font-weight: 400;
+    src: url(css/Symbols.eot);
+    src: url(css/Symbols.eot?#iefix) format('embedded-opentype'), url(css/Symbols.woff) format('woff'), url(css/Symbols.ttf) format('truetype')
+}
+
+.icon-planets {
+    font-family: 'Symbols';
+    font-size: 1.3em;
+    color: #222;
+    font-style: normal;
+}
+
+.icon-Symbols {
+    font-size: 1em;
+    color: #222;
+    font-style: normal;
+}
+
+.icon-Square:before {
+    content: 'r';
+    /*display: block;*/
+    color: #D500F9;
+}
+
+.icon-Opposition:before {
+    content: 'w';
+    /*display: block;*/
+    color: #f44336;
+}
+
+.icon-Quincunx:before {
+    content: 'o';
+    /*display: block;*/
+    color: #00B0FF;
+}
+
+.icon-Trine:before {
+    content: 'e';
+    /*display: block;*/
+    color: #00C853;
+}
+
+.icon-Sextile:before {
+    content: 't';
+    /*display: block;*/
+    color: #FF5722;
+}
+
+.icon-Conjunction:before {
+    content: 'q';
+    /*display: block;*/
+    color: #1A237E;
+}
+
+
+
+/*Planets icon*/
+.icon-Ascendant:before,
+.icon-AC:before{
+    content: 'Z';
+    /*display: block;*/
+    color: #F4511E;
+}
+
+.icon-Mid:before,
+.icon-MC:before,
+.icon-Midheaven:before{
+    content: 'X';
+    color: #03A9F4;
+}
+
+.icon-Vertex:before {
+    content: 'm';
+    /*display: block;*/
+    color: #A1887F;
+}
+
+.icon-Sun:before {
+    content: 'Q';
+    /*display: block;*/
+    color: #E65100;
+}
+
+.icon-Moon:before {
+    content: 'W';
+    /*display: block;*/
+    color: #9E9E9E;
+}
+
+.icon-Mercury:before {
+    content: 'E';
+    /*display: block;*/
+    color: #C0CA33;
+}
+
+.icon-Venus:before {
+    content: 'R';
+    /*display: block;*/
+    color: #00C853;
+}
+
+.icon-Mars:before {
+    content: 'T';
+    /*display: block;*/
+    color: #FF3D00;
+}
+
+.icon-Jupiter:before {
+    content: 'Y';
+    /*display: block;*/
+    color: #8E24AA;
+}
+
+.icon-Saturn:before {
+    content: 'U';
+    /*display: block;*/
+    color: #212121;
+}
+
+.icon-Uranus:before {
+    content: 'I';
+    /*display: block;*/
+    color: #039BE5;
+}
+
+.icon-Neptune:before {
+    content: 'O';
+    /*display: block;*/
+    color: #26C6DA;
+}
+
+.icon-Pluto:before {
+    content: 'P';
+    /*display: block;*/
+    color: #d32f2f;
+}
+.icon-Chiron:before {
+    content: 'M';
+    color: #AB47BC;
+}
+.icon-Node:before{
+    content: '{';
+    color: #212121;
+}
+.icon-Lilith:before {
+    content: '`';
+    color: #33691E;
+}
+.icon-Pof:before {
+    content: '<';
+    color: #37474F;
+}
+.icon-IC:before {
+    content: 'IC';
+    color: #03A9F4;
+}
+.icon-DC:before {
+    content: 'DC';
+    color: #FF9800;
+}
+
+
+/*Sign icons*/
+.icon-Aries:before {
+    content: 'a';
+    color: #c00;
+}
+.icon-Taurus:before {
+    content: 's';
+    /*display: block;*/
+    color: #06c;
+}
+
+.icon-Gemini:before {
+    content: 'd';
+    /*display: block;*/
+    color: #f90;
+}
+
+.icon-Cancer:before {
+    content: 'f';
+    /*display: block;*/
+    color: #06c;
+}
+
+.icon-Leo:before {
+    content: 'g';
+    /*display: block;*/
+    color: #c00;
+}
+
+.icon-Virgo:before {
+    content: 'h';
+    /*display: block;*/
+    color: #06c;
+}
+
+.icon-Libra:before {
+    content: 'j';
+    /*display: block;*/
+    color: #f90;
+}
+
+.icon-Scorpio:before {
+    content: 'k';
+    /*display: block;*/
+    color: #06c;
+}
+
+.icon-Sagittarius:before {
+    content: 'l';
+    /*display: block;*/
+    color: #c00;
+}
+
+.icon-Capricorn:before {
+    content: 'z';
+    /*display: block;*/
+    color: #390;
+}
+
+.icon-Aquarius:before {
+    content: 'x';
+    /*display: block;*/
+    color: #f90;
+}
+
+.icon-Pisces:before {
+    content: 'c';
+    /*display: block;*/
+    color: #06c;
+}
+
+
+.clearfix:before,
+.clearfix:after,
+.vr-row:before,
+.vr-row:after{
+    display: table;
+    content: " ";
+}
+.clearfix:after,
+.vr-row:after{
+    clear: both;
+}
+
+/**
+*** SIMPLE GRID
+*** (C) ZACH COLE 2016
+**/
+.vr-font-light {
+    font-weight: 300;
+}
+
+.vr-font-regular {
+    font-weight: 400;
+}
+
+.vr-font-heavy {
+    font-weight: 700;
+}
+
+/* POSITIONING */
+
+.vr-left {
+    text-align: left;
+}
+
+.vr-right {
+    text-align: right;
+}
+
+.vr-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vr-justify {
+    text-align: justify;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.vr-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vr-row {
+    position: relative;
+    width: 100%;
+}
+
+.vr-row [class^="vr-col"] {
+    float: left;
+    margin: 0.5rem 2%;
+    min-height: 0.125rem;
+}
+
+.vr-col-1,
+.vr-col-2,
+.vr-col-3,
+.vr-col-4,
+.vr-col-5,
+.vr-col-6,
+.vr-col-7,
+.vr-col-8,
+.vr-col-9,
+.vr-col-10,
+.vr-col-11,
+.vr-col-12 {
+    width: 96%;
+}
+
+.vr-col-sm-1 {
+    width: 4.33%;
+}
+
+.vr-col-sm-2 {
+    width: 12.66%;
+}
+
+.vr-col-sm-3 {
+    width: 21%;
+}
+
+.vr-col-sm-4 {
+    width: 29.33%;
+}
+
+.vr-col-sm-5 {
+    width: 37.66%;
+}
+
+.vr-col-sm-6 {
+    width: 46%;
+}
+
+.vr-col-sm-7 {
+    width: 54.33%;
+}
+
+.vr-col-sm-8 {
+    width: 62.66%;
+}
+
+.vr-col-sm-9 {
+    width: 71%;
+}
+
+.vr-col-sm-10 {
+    width: 79.33%;
+}
+
+.vr-col-sm-11 {
+    width: 87.66%;
+}
+
+.vr-col-sm-12 {
+    width: 96%;
+}
+
+.vr-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.vr-hidden-sm {
+    display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+    .vr-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+    .vr-col-1 {
+        width: 4.33%;
+    }
+
+    .vr-col-2 {
+        width: 12.66%;
+    }
+
+    .vr-col-3 {
+        width: 21%;
+    }
+
+    .vr-col-4 {
+        width: 29.33%;
+    }
+
+    .vr-col-5 {
+        width: 37.66%;
+    }
+
+    .vr-col-6 {
+        width: 46%;
+    }
+
+    .vr-col-7 {
+        width: 54.33%;
+    }
+
+    .vr-col-8 {
+        width: 62.66%;
+    }
+
+    .vr-col-9 {
+        width: 71%;
+    }
+
+    .vr-col-10 {
+        width: 79.33%;
+    }
+
+    .vr-col-11 {
+        width: 87.66%;
+    }
+
+    .vr-col-12 {
+        width: 96%;
+    }
+
+    .vr-hidden-sm {
+        display: block;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 60em) { /* 960px */
+    .vr-container {
+        width: 75%;
+        max-width: 60rem;
+    }
+}
+
+
+/*My Form*/
+.horoscope-form-container{
+    display: block;
+    margin: auto;
+}
+.myForm {
+    margin: 10px auto;
+    display: block;
+    overflow: hidden;
+}
+.myForm input[type=text],
+.myForm input[type=email],
+.myForm input[type=password],
+.myForm select {
+    width: 100%;
+    height: 45px !important;
+    padding: 0 10px;
+    max-width: 100%;
+    margin-bottom: 5px;
+    background-color: #FFF;
+    color: #717171;
+    box-shadow: none!important;
+    border: 2px solid rgba(0, 0, 0, .2)
+}
+.myForm input[type=text],
+.myForm input[type=email]{
+    width: 96%;
+    height: 40px !important;
+}
+.myForm input[type=submit] {
+    height: 48px
+}
+.myForm select{
+    font-size: 14px;
+    color: #717171;
+    outline:none !important;
+}
+.myForm textarea {
+    background-color: #FFF;
+    box-shadow: none!important;
+    border: 2px solid rgba(0, 0, 0, .1)
+}
+.panchang-date-bar .myForm select {
+    font-size: 1em !important;
+}
+.panchang-date-bar h3{
+    font-size: 1.3em;
+    margin-left:10px;
+}
+.myForm label {
+    color: #222;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 14px !important;
+}
+header .navbar-inverse {
+    background: 0 0!important;
+    box-shadow: none!important
+}
+.myForm input:not([type=submit]):hover,
+.myForm textarea:hover {
+    border-color: #cad1d9
+}
+.myForm input[type=text],
+.myForm input[type=email],
+.myForm input[type=password],
+.myForm select,
+.myForm textarea {
+    border-radius: .3em!important
+}
+.myForm input:not([type=submit]):active,
+.myForm input:not([type=submit]):focus,
+.myForm textarea:active,
+.myForm textarea:focus,
+.myForm textarea:not([type=submit]):active {
+    border-color: #88d3ff;
+    background-color: #FFF
+}
+.myForm textarea {
+    height: 10rem
+}
+.myForm::-moz-placeholder {
+    color: #717171
+}
+.myForm:-ms-input-placeholder {
+    color: #717171
+}
+.myForm::-webkit-input-placeholder {
+    color: #717171
+}
+.myForm:-moz-placeholder {
+    color: #717171
+}
+.myForm h1 {
+    color: #666
+}
+.display-none{
+    display: none;
+}
+.profile-error{
+    color: red;
+}
+
+.report-title-details h4{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.chartImg img{
+    width: 80%;
+    margin: 0 auto 4em auto;
+    display: block;
+}
+.table td,
+.table th,
+.table
+{
+    border-width:0 0 1px 0 ;
+    border-bottom-style: solid;
+    border-bottom-color: #9f9fa5;
+}
+.custom-para-italic{
+    font-size: 17px !important;
+    font-style: italic;
+    line-height: 30px;
+}
+.custom-para{
+    font-size: 17px !important;
+    line-height: 30px;
+}
+.asc-report p:last-child{
+    display: none !important;
+}
+.custom-para-border{
+    border: 2px solid #979699;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+.custom-para-border p:last-child{
+    margin-bottom: 0;
+}
+.custom-btn{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 46px;
+    border: 1px solid rgb(30,136,229);
+    background: rgb(30,136,229);
+    color: #fff;
+    border-radius: 4px;
+    width: 100%;
+}
+.custom-btn:hover{
+    background:rgb(25,118,210);
+}
+.spinner-container{
+    display: none;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.spinner-container1{
+    left: 0 !important;
+    transform:none !important;
+    display: none;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+.myForm select{
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+
+}
+
+.pdf-like-style{
+    background: url(img/pdf-bg.jpg)repeat;
+    border: 2px solid #bababa;
+    padding: 10px;
+    border-radius: 4px;
+    min-height:300px;
+}
+label.confirmCheckboxLabel{
+    margin-bottom: 15px !important;
+    color: #666 !important;
+    font-size: 0.8em !important;
+}
+.isFreeChartCheckboxChecked{
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    height: 15px;
+}
+.disabled-btn{
+    background: #eee !important;
+    border: #e3e3e3 !important;
+    color: #333!important;
+}
+
+@media only screen and (max-width: 45em) {
+    .myForm input[type=text],
+    .myForm input[type=email]{
+        width: 91% !important;
+    }
+    .myForm input[type=text],
+    .myForm input[type=email],
+    .myForm input[type=password],
+    .myForm select {
+        border: 2px solid rgba(0, 0, 0, .1) !important;
+    }
+    .chartImg img{
+        width: 100% !important;
+        margin: 0 auto 2em auto;
+    }
+    .custom-btn{
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,25 @@
+<?php
+/**
+ * Thrive Themes - https://thrivethemes.com
+ *
+ * @package thrive-theme
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Silence is golden!
+}
+?>
+
+<button class="ttd-tooltip-row click" data-fn="editName">
+	<?php echo __( 'Rename', THEME_DOMAIN ); ?>
+</button>
+
+<div class="ttd-row-hide-if-active">
+	<button class="ttd-tooltip-row click" data-fn="duplicateSkin">
+		<?php echo __( 'Duplicate', THEME_DOMAIN ); ?>
+	</button>
+
+	<button class="ttd-tooltip-row click" data-fn="deleteSkin">
+		<?php echo __( 'Delete', THEME_DOMAIN ); ?>
+	</button>
+</div>

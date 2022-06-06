@@ -1,0 +1,130 @@
+.moonsign-quiz-options-holder {
+    width: 90%;
+    padding: 10px 40px;
+}
+
+.moonsign-quiz-item {
+}
+
+.moonsign-quiz-item-wrap {
+}
+
+.moonsign-quiz-question {
+}
+
+.moonsign-quiz-question h3 {
+}
+
+.moonsign-quiz-answers {
+}
+
+.moonsign-quiz-single-answer {
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    margin: 25px auto;
+    cursor: pointer;
+    padding: 15px;
+    background: #fff;
+    position: relative;
+    font-family: arial;
+}
+
+.moonsign-quiz-single-answer:hover {
+    background: #d0a953;
+    color: #fff;
+}
+
+.moonsign-quiz-single-answer::before {
+    height: 28px;
+    background: url(../img/tqb-first-style-circle.png) center no-repeat;
+    left: 14px;
+    top: 10px;
+    content: '';
+    width: 18px;
+    position: absolute;
+}
+
+.moonsign-quiz-single-answer:hover::before {
+    background: url(../img/tqb-first-style-selected.png) center no-repeat;
+}
+
+.moonsign-quiz-single-answer span {
+    padding-left: 30px;
+    font-weight: 300;
+    line-height: 28px;
+    word-break: break-word;
+    display: inline-block;
+}
+
+.moonsign-quiz-single-answer em {
+    font-style: normal;
+}
+
+.holder {
+    overflow: hidden;
+}
+
+.left-side {
+    float: left;
+    width: 66%;
+}
+
+.right-side {
+    float: right;
+    width: 30%;
+}
+
+.imgholder img {
+    width: 100%;
+    height: auto;
+}
+
+.left-side div {
+    width: 90%;
+}
+
+.left-side input {
+    border: 1px solid #dee1e6;
+    padding: 20px;
+    color: #242424;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 0 10px 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #fff !important;
+}
+
+.left-side button {
+    background-color: rgb(203, 53, 136) !important;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: none;
+    color: #fff;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.moonsign-quiz-options-holder-last {
+    max-width: 600px;
+    margin: auto;
+}
+
+#aweberError {
+    color: red;
+    background: #fff;
+    text-align: center;
+    font-family: Arial;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 100%;
+}

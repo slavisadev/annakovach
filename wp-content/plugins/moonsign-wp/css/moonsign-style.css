@@ -1,0 +1,114 @@
+.moonsign-form-outter {
+
+}
+
+.moonsign-form-wrap {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto 50px;
+}
+
+.col-auto {
+    margin: 0 0 10px;
+    text-align: right;
+}
+
+.col-auto .col-inner {
+    float: right;
+    width: 29%;
+    margin-left: 2%;
+}
+
+.col-auto .col-inner select {
+    width: 100%;
+}
+
+.col-auto label {
+    width: 30%;
+    text-align: left;
+    float: left;
+    display: inline-block;
+    line-height: 29px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.6em;
+}
+
+.col-auto select {
+    background: #fff;
+    border: 1px solid #bfbfbf;
+    font-size: 17px;
+    padding: 3px;
+    color: #666;
+    width: 60%;
+    font-family: "Open Sans";
+}
+
+.col-auto-full button {
+    padding: 10px 0;
+    background: #424242;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    display: inline-block;
+    float: right;
+    width: 60%;
+    color: #fff;
+}
+
+.col-auto-full {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.moonsign-content-hidden {
+    display: none;
+}
+
+@media (max-width: 776px) {
+
+    .col-auto {
+
+    }
+
+    .col-auto select {
+        width: 100%;
+    }
+
+    .col-auto label {
+        width: 100%;
+        float: none;
+    }
+
+    .col-auto .col-inner:last-child {
+        margin:0;
+        width: 48%;
+    }
+
+    .col-auto-mobile {
+        text-align: left;
+    }
+
+    .col-auto .col-inner {
+        float: none;
+        width: 49%;
+        display: inline-block;
+        text-align: center;
+        margin: 0 5px 0 0;
+    }
+
+    .moonsign-form-wrap h2 {
+        margin-bottom: 20px !important;
+        margin-top: 10px !important;
+        font-size: 40px !important;
+    }
+
+    .moonsign-form-wrap {
+        width: 96%;
+        padding: 0 2%;
+    }
+
+    .col-auto-full button {
+        width: 100%;
+    }
+}
